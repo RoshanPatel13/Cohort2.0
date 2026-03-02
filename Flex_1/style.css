@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#parent{
+    height: 100%;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: space-between; 
+    
+}
+#child1{
+    height: 200px;
+    width: 200px;
+    background:blue;
+    border: 3px solid white;
+}
+#child2{
+    height:200px;
+    width: 200px;
+    background: skyblue;
+    border: 3px solid white;
+}
+#child3{
+    height:200px;
+    width: 200px;
+    background: rgb(17, 203, 23);
+    border: 3px solid white;
+    
+}

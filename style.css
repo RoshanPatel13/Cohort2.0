@@ -1,0 +1,48 @@
+@font-face {
+    font-family: raju ;
+    src: url(./BLOODY.TTF);
+}
+@font-face {
+    font-family: Nothing;
+    src: url(./Ndot-55.otf);
+}
+
+*{
+
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+ height:100%;
+ width: 100%;
+
+}
+h1{
+    color: cornflowerblue;
+    background:#001;
+    font-size: 70px;
+    font-family: Nothing ;
+    font-weight: 200;
+    text-align: center;
+
+}
+#hero{
+    color: black;
+    background-color: blue;
+
+}
+.fun{
+    color: royalblue;
+    background-color: blueviolet;
+    text-size:90px;
+    font-family: raju;
+}
+#box{
+    height: 300px;
+    width: 300px;
+    background-color:magenta;
+    text-align: center;
+}
+

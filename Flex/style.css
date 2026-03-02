@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+#box1{
+    position: absolute;
+    left:50%;
+    top:50%;
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    z-index: 5;
+}
+#box2{
+    position:absolute;
+    right: 45%;
+    top:45%;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(6, 233, 10);
+    z-index: 4;
+    transform: translateY(50%);
+}
+#box3{
+    position:absolute;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(15, 154, 241);
+    top:46%;
+    right:55%;
+}
