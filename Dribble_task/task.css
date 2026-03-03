@@ -1,0 +1,77 @@
+@font-face {
+    font-family:pastel ;
+    src: url(./pastel_trunk/PastelTrunk-Regular.otf);
+}
+@font-face {
+    font-family: head;
+    src: url(./almond_milky/Almond\ Milky.otf);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(218, 189, 75);
+    padding: 20px;
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    font-family: ;
+    
+}
+h2{
+    text-align: center;
+    font-size: 3rem;
+    background-color: dimgray;
+    padding: 15px;
+    font-size: 100px;
+    font-family:pastel;
+    font-weight: 300;
+
+}
+.card{
+    height: 350px;
+    width:300px;
+    background-color: rgb(182, 35, 35);
+    position: absolute;
+    transition: all ease 0.3s;
+    border-radius: 10%;
+    position: relative;
+    overflow: hidden;
+    font-family: head;
+    font-weight: 400;
+    font-size: 16px;
+
+    
+}
+.card img{
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+}
+.bottom{
+    height:30%;
+    width:100%;
+    position: absolute;
+    padding: 20px;
+    background:linear-gradient(transparent,rgb(58, 56, 56));
+    color:white;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    bottom: -30%;
+    justify-content: space-between;
+}
+.card:hover .bottom{
+   bottom: 0;
+
+}
+   
