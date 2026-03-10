@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+     
+    height: 100%;
+    width: 100%;
+}
+main{
+    padding: 3px;
+    height:100%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    background-color: black ;
+    section{
+        background-position: center;
+        background-size:cover;
+        height: 100%;
+        width: 100px;
+        flex-grow: 1;
+        
+    }
+    section:hover{
+        flex-grow: 2;
+        transition: all 2 ease;
+        cursor: pointer;
+    }
+    section:nth-child(1){
+        background-image: url(./JagannathPuri.jpg);
+    }
+    section:nth-child(2){
+        background-image: url(./kedarnath.jpg);
+    }
+    section:nth-child(3){
+        background-image: url(./MahakalUjjain.jpg);
+    }
+    section:nth-child(4){
+        background-image: url(./Rameshwaram.jpg);
+    }
+    section:nth-child(5){
+        background-image: url(./Vaishnomata.jpg);
+    }
+}
