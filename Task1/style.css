@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+h1{
+    background-color: blueviolet;
+    font-size: 30px;
+    font-family: Helvetica ;
+    text-align: center;
+}
+main{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: "aside aside section section section"
+                         "aside aside section section section"
+                         "aside aside div1 div2 div3" ;
+    gap:20px;
+    padding: 10px;
+    
+}
+aside{
+     background-image:url(./assets/german.jpg);
+    grid-area: aside;
+    background-size: cover;
+background-position: center;
+border-radius: 20px;
+}
+section{
+    background-image:url(./assets/download.png);
+  grid-area: section;
+  background-size: cover;
+background-position: center;
+border-radius: 20px;
+}
+#div1{
+    background-size: cover;
+background-position: center;
+    background-image:url(./assets/german.jpg);
+  grid-area: div1;
+  border-radius: 20px;
+}
+#div2{
+    background-size: cover;
+background-position: center;
+    background-image:url(./assets/lab.jpg);
+    grid-area: div2;
+    border-radius: 20px;
+}
+#div3{
+    background-size: cover;
+background-position: center;
+    background-image: url(./assets/saintberned.jpg);
+   grid-area: div3; 
+   border-radius: 20px;
+}
