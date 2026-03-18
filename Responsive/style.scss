@@ -23,12 +23,12 @@ html{
 main{
     width: 100%;
    @include flex-column(0 rem);
-    section{
+   align-items: center;
+    section.view1{
       padding: 1rem;
-      width: 100%;
+      max-width: 1600px;
       @include flex-column(1rem);
-    }
-    .top{ 
+     .top{ 
         width: 100%;
          img{
             width: 100%;
@@ -64,14 +64,119 @@ main{
             }
          }
     }
+    }
+    section.view2{
+        @include flex-column(1rem);
+        width: 100%;
+        padding: 1rem;
+        gap: 2.5rem;
 
+        .top,.bottom{
+            display: flex;
+            width: 100%;
+            gap: 1.5rem;
+            justify-content: space-around;
+
+        }
+        .element{
+            @include flex-column(1rem);
+            small{
+                opacity: 0.7;
+            }
+            text-align: center;
+            h2{
+                font-weight: 400;
+                font-size: 2rem;
+            }
+        }
+    }
+    section.view3{
+        @include flex-column(1rem);
+        width: 100%;
+        width: 100%;
+        padding: 1rem;
+        gap: 2rem;
+        
+
+        .top{
+            width: 100%;
+            img{
+                width: 100%;
+                border-radius: 0.7rem;
+
+
+            }
+        }
+        .top,.bottom{
+            @include flex-column(1rem);
+           width: 100%;
+            gap: 1.5rem;
+            justify-content: space-around;
+            padding: 1rem;
+            }
+            .bottom{
+                border-radius: 0.7rem;
+                background-color:rgb(77, 74, 74);
+                display: flex;
+                justify-content: space-between;
+                h3{
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+                h1{
+                    font-size: 2rem;
+                    font-weight: 400;
+                }
+                .paragraphs{
+                    @include flex-column(0.7rem);
+                    p{
+                        font-weight: 300;
+                    }
+                }
+            }
+}
+   section.view4{
+    @include flex-column(1rem);
+     width: 100%;
+        padding: 1rem;
+        gap: 2.5rem;
+        .top{
+        width: 100%;
+           img{
+            width: 100%;
+            border-radius: 0.7rem;
+           }
+        }
+       .bottom{
+        background-color : rgb(77, 74, 74);
+          border-radius: 10px;
+         padding: 1rem ;
+         @include flex-column(4rem);
+         
+         h3{
+            font-weight: 300;
+            font-size: 1rem; 
+         }
+         h1{
+            font-weight: 300;
+            font-size: 2.5rem; 
+         }
+           .paragraphs{
+              display: flex;
+              flex-direction: column;
+
+           }
+       }
+   }
 
 }
 @media (min-width :700px) {
     main{
        
-        section{
+        section.view1{
             flex-direction: row;
+            padding: 1rem 4rem;
              .top,.bottom{
                 width: 50%;
 
@@ -84,6 +189,58 @@ main{
              }
 
         }
-    }
+        section.view2{
+            flex-direction: row;
+            padding: 1rem 4rem;
+             
+        }
+        section.view3{
+            flex-direction: row-reverse;
+            padding: 1rem 4rem;
+            .top,.bottom{
+                width: 50%;
+            }
+                .bottom{
+                justify-content:space-around;
+                padding: 3rem;
+                .paragraphs{
+                      display: flex;
+                      flex-direction: row;
+
+                    p{
+                      color: palegreen;
+                      
+                    }
+                        
+                    }
+                }
+                
+                   
+        }
+        section.view4{
+            flex-direction: row;
+            padding: 1rem 4rem;
+           .top,.bottom{
+            width: 50%;
+
+           }
+           .bottom{
+                justify-content:space-around;
+                padding: 3rem;
+                .paragraphs{
+                      display: flex;
+                      flex-direction: row;
+                      gap:1.5rem;
+
+                    p{
+                      color: palegreen;
+                      
+                    }
+                        
+                    }
+                }
+        }
     
-}
+    
+        }
+    }
